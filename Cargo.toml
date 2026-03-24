@@ -4,3 +4,8 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+serde = { version = "1.0.228", features = ["derive"] }
+chrono = { version = "0.4.38", features = ["serde"] }
+serde_json = "1.0.120"
+image = "0.24.9"
+csv = "1.4.0"

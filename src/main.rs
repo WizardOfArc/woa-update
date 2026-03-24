@@ -11,11 +11,12 @@ fn main() {
             return;
         }
     }
-    let new_content = woaupdate::commit_data_update("update_blogpost");
+    let new_content = woaupdate::commit_data_update("update json data");
     println!("{}", new_content);
     let new_content2 = woaupdate::render_woa_templates();
     println!("{}", new_content2);
     println!("committing and pushing changes to WOA...");
-    let new_content3 = woaupdate::commit_woa_update("commit changes to WOA after blog update");
+    let new_content3 =
+        woaupdate::commit_woa_update("commit changes to WOA after data update and render");
     println!("{}", new_content3);
 }
